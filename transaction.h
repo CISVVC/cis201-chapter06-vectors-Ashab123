@@ -1,20 +1,20 @@
 #ifndef TRANSACTION_H
 #define TRANSACTION_H
 
-#include <iostream>
-
 class Transaction
 {
+	// member function declarations
 public:
-   Transaction();
-   void read();
-   int get_day() const;
-   double get_amount() const;
-   void print() const;
+	Transaction();
+	void read();
+	int get_day();
+	double get_amount();
+	std::string get_description();
 private:
-   int day;
-   double amount;
-   std::string description;
+	// member data declarations
+	int m_day;
+	double m_amount;
+	std::string m_description;
 };
 
 #endif

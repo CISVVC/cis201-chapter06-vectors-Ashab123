@@ -1,40 +1,43 @@
 #include <iostream>
 #include "transaction.h"
-#include <vector>
+#include <string>
 
+// defualt constructor sets member variables to zeros
 Transaction::Transaction()
 {
-   day = 0;
-   amount = 0.0;
+	int m_day = 0;
+	double m_amount = 0.0;
 }
 
+// set member variables
 void Transaction::read()
 {
-   std::cout << "Enter the day: ";
-   std::cin >> day;
-   std::cout << "Enter the amount: ";
-   std::cin >> amount;
-   std::cin.ignore();
-   std::cout << "Enter a desctiption: ";
-   std::getline(std::cin,description);
+	std::cin >> m_day;
+	std::cin >> m_amount;
+	std::cin.ignore();
+	std::getline(std::cin, m_description);
 }
-
-int Transaction::get_day() const
+/**
+ * @return int / day member variable
+ */
+int Transaction::get_day()
 {
-   return day;
+	return m_day;
 }
 
-double Transaction::get_amount() const
+/**
+ * @return double / amount member variable
+ */
+double Transaction::get_amount()
 {
-   return amount;
+	return m_amount;
 }
 
-void Transaction::print() const
+/**
+ * @return string / description member variable
+ */
+std::string Transaction::get_description()
 {
-   std::cout << std:: endl;
-   std::cout << "day:" << day << std::endl;
-   std::cout << "amount:" << amount << std::endl;
-   std::cout << "description:" << description << std::endl;
+	return m_description;
 }
-
 

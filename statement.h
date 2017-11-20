@@ -2,21 +2,27 @@
 #define STATEMENT_H
 
 #include <iostream>
-#include "transaction.h"
+#include <string>
 #include <vector>
+#include "transaction.h"
+
+const int MAX_DAY = 30;
 
 class Statement
 {
 public:
-   Statement();
-   void read();
-   double compute_balances();
-   void print();
-   double get_average_daily_balance();
-   double get_minimum_daily_balance();
+	// member fuction declarations
+	Statement();
+	void read();
+	void print();
+	double compute_balances();
+	double get_average_daily_balance();
+	double get_minimum_daily_balance();
+	double get_interest();
 private:
-   std::vector<Transaction> transactions;
-   std::vector<double> daily_balances;
+	// member variable declarations
+	std::vector<Transaction> transactions;
+	std::vector<double> daily_balances;
+	double current_balance = 0;
 };
-
 #endif
