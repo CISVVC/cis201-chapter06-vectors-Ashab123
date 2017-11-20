@@ -1,3 +1,5 @@
+// creates a statement class
+
 #ifndef STATEMENT_H
 #define STATEMENT_H
 

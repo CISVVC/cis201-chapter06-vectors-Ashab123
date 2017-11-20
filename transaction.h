@@ -1,3 +1,5 @@
+// creates transaction class
+
 #ifndef TRANSACTION_H
 #define TRANSACTION_H
 

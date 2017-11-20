@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>
-#include "Transaction.h"
-#include "Statement.h"
+#include "transaction.h"
+#include "statement.h"
 
 // defualt constructor
 Statement::Statement()

@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Transaction.h"
-#include "Statement.h"
+#include "transaction.h"
+#include "statement.h"
 
 int main() 
 {
